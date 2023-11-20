@@ -33,32 +33,37 @@
                                                                     href="#" data-id="EmailPage-CreateAccountLink"
                                                                     rel="noopener noreferrer"> Create an account </a>
                                                             </p>
-                                                            <div class="mt-xs-4"><label class="spectrum-FieldLabel"
+                                                            <div class="mt-xs-4">
+                                                                <label class="spectrum-FieldLabel"
                                                                                         id="react-spectrum-11"
                                                                                         for="EmailPage-EmailField">Email
-                                                                address</label><input type="email"
-                                                                                      class="spectrum-Textfield spectrum-Textfield--quiet"
+                                                                address</label>
+                                                                <input type="email"
+                                                                                      class="spectrum-Textfield spectrum-Textfield--quiet is-invalid"
                                                                                       autocomplete="email"
                                                                                       id="EmailPage-EmailField"
                                                                                       data-id="EmailPage-EmailField"
                                                                                       name="username"
                                                                                       aria-describedby="EmailPage-EmailField-Error"
                                                                                       value="" fdprocessedid="uf4ve">
-                                                                <div class="credential-hide-helper"><input
+                                                                <div class="credential-hide-helper">
+                                                                    <input
                                                                         autocomplete="current-password"
                                                                         aria-hidden="true" name="passwd"
                                                                         placeholder="Password" type="password"
                                                                         tabindex="-1"></div>
                                                             </div>
+                                                            <label data-id="EmailPage-EmailField-Error" for="EmailPage-EmailField" class="spectrum-FieldLabel mod-error-label InlineError">We don't have an account with that email address.</label>
                                                         </section>
                                                         <section data-columns="2" class="EmailPage__submit mod-submit">
                                                             <div class="ta-left"></div>
-                                                            <div class="ta-right">
+                                                            <div class="ta-right buttonParent">
                                                                 <button data-id="EmailPage-ContinueButton"
                                                                         class="spectrum-Button spectrum-Button--cta SpinnerButton SpinnerButton--right"
                                                                         fdprocessedid="b6wvcq"><span
                                                                         class="spectrum-Button-label">Continue</span>
                                                                 </button>
+                                                                <button data-id="EmailPage-ContinueButton" class="spectrum-Button spectrum-Button--cta is-disabled SpinnerButton SpinnerButton--right" fdprocessedid="dnnmw" disabled><div class="spectrum-CircleLoader spectrum-CircleLoader--indeterminate spectrum-CircleLoader--small" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-hidden="true"><div class="spectrum-CircleLoader-track"></div><div class="spectrum-CircleLoader-fills"><div class="spectrum-CircleLoader-fillMask1"><div class="spectrum-CircleLoader-fillSubMask1"><div class="spectrum-CircleLoader-fill"></div></div></div><div class="spectrum-CircleLoader-fillMask2"><div class="spectrum-CircleLoader-fillSubMask2"><div class="spectrum-CircleLoader-fill"></div></div></div></div></div><span class="spectrum-Button-label">Continue</span></button>
                                                             </div>
                                                         </section>
                                                     </form>
